@@ -21,8 +21,11 @@ public class ServiceImpl implements Service {
         return number1+ " * " +number2+ " = " + com;
     }
 
-    public String division(int number1,int number2){
-        int pr = number1 / number2;
+    public String division(float number1,float number2){
+        float pr = number1 / number2;
+        if (number2==0){
+            return " На 0 делить нельзя ";
+        }
         return number1+ " / " +number2+ " = " + pr;
     }
 }
